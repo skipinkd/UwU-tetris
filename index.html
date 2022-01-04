@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>UwU-tetris</title>
+  <link href="css/style.css" rel="stylesheet">
+  <meta charset="UTF-8">
+</head>
+
+<body>
+  <!-- рисуем поле для игры -->
+
+  <div id="pole">
+    <div id="canvasPole">
+      <canvas width="320" height="640" id="game"></canvas>
+    </div>
+    <div id="mainPole">
+      <div id="firstPole">
+        <canvas width="320" height="320" id="next"></canvas>
+      </div>
+      <div id="secondPole">
+        <p id="count">ряд: 0</p>
+        <p id="level">lvl: easy</p>
+        <p id="elmcnt">фигура: 0</p>
+        <p id="award">рекорд: 0</p>
+      </div>
+    </div>
+  </div>
+    <script src="js/script.js"></script>
+</body>
+</html>
