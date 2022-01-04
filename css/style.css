@@ -1,0 +1,84 @@
+/*настройки стилей страницы*/
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
+
+*{box-sizing:  border-box;}
+
+html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  min-width:100%;
+  min-height:100%;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 40px;
+}
+/*делаем чёрный фон и выравниваем всё по центру*/
+body {
+  background: rgb(2,0,36);
+  background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(70,70,125,1) 62%, rgba(26,140,164,1) 99%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  
+}
+
+
+#pole{
+  width: 668px;
+  height: 654px;
+}
+
+#canvasPole {
+  border: 2px solid white;
+  width: 324px;
+  height: 644px;
+  float: left;
+  padding: 0px;
+  margin: 5px;
+}
+
+#firstPole{
+  border: 2px solid white;
+  width: 324px;
+  height: 324px;
+  float: right;
+  margin: 5px;
+  padding: 0px;
+}
+
+#secondPole{
+  border: 2px solid white;
+  width: 324px;
+  height: 309px;
+  float: right;
+  margin: 5px;
+  padding: 0px;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+#count{
+  margin-top: 20px;
+  margin-bottom: 20px;
+  margin-left: 10px;
+}
+
+#level{
+  margin-top: 20px;
+  margin-bottom: 20px;
+  margin-left: 10px;
+}
+
+#elmcnt{
+  margin-top: 20px;
+  margin-bottom: 20px;
+  margin-left: 10px;
+}
+
+#award{
+  margin-top: 20px;
+  margin-bottom: 20px;
+  margin-left: 10px;
+}
