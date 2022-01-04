@@ -459,13 +459,72 @@
 
 
     }
+    //виртуальные кнопки
+
+      function provBut(but){
+        //влево и вправо
+        if (but == 'left' || but == 'right') {
+          const col = but === 'left'
+          // если влево, то уменьшаем индекс в столбце, если вправо — увеличиваем
+          ? tetromino.col - 1
+          : tetromino.col + 1;
+
+          // если так ходить можно, то запоминаем текущее положение 
+          if (isValidMove(tetromino.matrix, tetromino.row, col)) {
+          tetromino.col = col;
+          }
+        }
+
+        //вверх — поворот
+        if (but == 'up') {
+          // поворачиваем фигуру на 90 градусов
+          const matrix = rotate(tetromino.matrix);
+          // если так ходить можно — запоминаем
+          if (isValidMove(matrix, tetromino.row, tetromino.col)) {
+            tetromino.matrix = matrix;
+          }
+        }
+
+        //вниз — ускорить падение
+        if(but == 'down') {
+          // смещаем фигуру на строку вниз
+          const row = tetromino.row + 1;
+          // если опускаться больше некуда — запоминаем новое положение
+          if (!isValidMove(tetromino.matrix, row, tetromino.col)) {
+            tetromino.row = row - 1;
+            // ставим на место и смотрим на заполненные ряды
+            placeTetromino();
+            return;
+          }
+          // запоминаем строку, куда стала фигура
+          tetromino.row = row;
+        }
+      }
+
+    
+    left.onclick = function() {
+      let but = 'left';
+      provBut(but);
+    };
+    right.onclick = function() {
+      let but = 'right';
+      provBut(but);
+    };
+    up.onclick = function() {
+      let but = 'up';
+      provBut(but);
+    };
+    down.onclick = function() {
+      let but = 'down';
+      provBut(but);
+    };
+
     // следим за нажатиями на клавиши
     document.addEventListener('keydown', function(e) {
       // если игра закончилась — сразу выходим
       if (gameOver) return;
-
       // стрелки влево и вправо
-      if (e.which === 37 || e.which === 39) {
+      if ((e.which === 37) || (e.which === 39)) {
         const col = e.which === 37
           // если влево, то уменьшаем индекс в столбце, если вправо — увеличиваем
           ? tetromino.col - 1
@@ -478,7 +537,7 @@
       }
 
       // стрелка вверх — поворот
-      if (e.which === 38) {
+      if (e.which == 38) {
         // поворачиваем фигуру на 90 градусов
         const matrix = rotate(tetromino.matrix);
         // если так ходить можно — запоминаем
