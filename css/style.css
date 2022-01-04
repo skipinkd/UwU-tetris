@@ -82,3 +82,27 @@ body {
   margin-bottom: 20px;
   margin-left: 10px;
 }
+
+#up{
+  border: 0px;
+  margin: 0px;
+  padding: 6px;
+}
+
+#left{
+  border: 0px;
+  margin: 0px;
+  padding: 6px;
+}
+
+#down{
+  border: 0px;
+  margin: 0px;
+  padding: 6px;
+}
+
+#right{
+  border: 0px;
+  margin: 0px;
+  padding: 6px;
+}
