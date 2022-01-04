@@ -1,0 +1,188 @@
+/*настройки стилей страницы*/
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
+
+*{box-sizing:  border-box;}
+
+html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  min-width:100%;
+  min-height:100%;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 40px;
+}
+/*делаем чёрный фон и выравниваем всё по центру*/
+body {
+  
+  background: rgb(2,0,36);
+  background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(70,70,125,1) 62%, rgba(26,140,164,1) 99%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  
+  
+}
+
+
+#pole{
+  position: relative;
+  width: 668px;
+  height: 654px;
+  left: 150px;
+}
+
+#canvasPole {
+  border: 2px solid white;
+  width: 324px;
+  height: 644px;
+  float: left;
+  padding: 0px;
+  margin: 5px;
+}
+
+#firstPole{
+  border: 2px solid white;
+  width: 324px;
+  height: 324px;
+  float: right;
+  margin: 5px;
+  padding: 0px;
+}
+
+#secondPole{
+  border: 2px solid white;
+  width: 324px;
+  height: 309px;
+  float: right;
+  margin: 5px;
+  padding: 0px;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+#count{
+  margin-top: 20px;
+  margin-bottom: 20px;
+  margin-left: 10px;
+}
+
+#level{
+  margin-top: 20px;
+  margin-bottom: 20px;
+  margin-left: 10px;
+}
+
+#elmcnt{
+  margin-top: 20px;
+  margin-bottom: 20px;
+  margin-left: 10px;
+}
+
+#award{
+  margin-top: 20px;
+  margin-bottom: 20px;
+  margin-left: 10px;
+}
+
+#up{
+  position: relative;
+  left: 105px;
+  color: #fff;
+  text-shadow: 0 -1px rgba(0,0,0,.5);
+  padding: .8em 2.5em;
+  border: 1px solid rgb(70,70,125,1);
+  border-radius: 5px;
+  outline: none;
+  background: rgb(70,70,125,1) linear-gradient(rgb(96, 96, 170), rgb(70,70,125,1) 80%);
+  box-shadow:
+   0 6px rgb(70,70,125,1),
+   0 3px 15px rgba(0,0,0,.4),
+   inset 0 1px rgba(255,255,255,.3),
+   inset 0 0 3px rgba(255,255,255,.5);
+  transition: .2s;
+}
+#up:hover {
+  background: rgb(70,70,125,1) linear-gradient(rgb(70,70,125,1), rgb(70,70,125,1) 80%);
+}
+#up:active {
+  background: rgb(70,70,125,1) linear-gradient(rgb(70,70,125,1), rgb(70,70,125,1) 80%);
+  transform: translate(0, 4px);
+}
+
+
+#left{
+  color: #fff;
+  text-shadow: 0 -1px rgba(0,0,0,.5);
+  padding: .8em 2.5em;
+  border: 1px solid rgb(70,70,125,1);
+  border-radius: 5px;
+  outline: none;
+  background: rgb(70,70,125,1) linear-gradient(rgb(96, 96, 170), rgb(70,70,125,1) 80%);
+  box-shadow:
+   0 6px rgb(70,70,125,1),
+   0 3px 15px rgba(0,0,0,.4),
+   inset 0 1px rgba(255,255,255,.3),
+   inset 0 0 3px rgba(255,255,255,.5);
+  transition: .2s;
+}
+#left:hover {
+  background: rgb(70,70,125,1) linear-gradient(rgb(70,70,125,1), rgb(70,70,125,1) 80%);
+}
+#left:active {
+  background: rgb(70,70,125,1) linear-gradient(rgb(70,70,125,1), rgb(70,70,125,1) 80%);
+  transform: translate(0, 4px);
+}
+#down{
+  color: #fff;
+  text-shadow: 0 -1px rgba(0,0,0,.5);
+  padding: .8em 2.5em;
+  border: 1px solid rgb(70,70,125,1);
+  border-radius: 5px;
+  outline: none;
+  background: rgb(70,70,125,1) linear-gradient(rgb(96, 96, 170), rgb(70,70,125,1) 80%);
+  box-shadow:
+   0 6px rgb(70,70,125,1),
+   0 3px 15px rgba(0,0,0,.4),
+   inset 0 1px rgba(255,255,255,.3),
+   inset 0 0 3px rgba(255,255,255,.5);
+  transition: .2s;
+}
+#dowm:hover {
+  background: rgb(70,70,125,1) linear-gradient(rgb(70,70,125,1), rgb(70,70,125,1) 80%);
+}
+#down:active {
+  background: rgb(70,70,125,1) linear-gradient(rgb(70,70,125,1), rgb(70,70,125,1) 80%);
+  transform: translate(0, 4px);
+}
+
+#right{
+  color: #fff;
+  text-shadow: 0 -1px rgba(0,0,0,.5);
+  padding: .8em 2.5em;
+  border: 1px solid rgb(70,70,125,1);
+  border-radius: 5px;
+  outline: none;
+  background: rgb(70,70,125,1) linear-gradient(rgb(96, 96, 170), rgb(70,70,125,1) 80%);
+  box-shadow:
+   0 6px rgb(70,70,125,1),
+   0 3px 15px rgba(0,0,0,.4),
+   inset 0 1px rgba(255,255,255,.3),
+   inset 0 0 3px rgba(255,255,255,.5);
+  transition: .2s;
+}
+#right:hover {
+  background: rgb(70,70,125,1) linear-gradient(rgb(70,70,125,1), rgb(70,70,125,1) 80%);
+}
+#right:active {
+  background: rgb(70,70,125,1) linear-gradient(rgb(70,70,125,1), rgb(70,70,125,1) 80%);
+  transform: translate(0, 4px);
+}
+
+#key{
+  position: relative;
+  top: 380px;
+  right: 330px;
+}
