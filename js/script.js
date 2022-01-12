@@ -1,7 +1,7 @@
     // License CC0 1.0 Universal 
     // https://gist.github.com/straker/3c98304f8a6a9174efd8292800891ea1
     // https://tetris.fandom.com/wiki/Tetris_Guideline
-webView.getSettings().setUseWideViewPort(false);
+
     // получаем доступ к холсту
     const canvas = document.getElementById('game');
     const context = canvas.getContext('2d');
